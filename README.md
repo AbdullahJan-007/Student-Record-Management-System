@@ -3,7 +3,7 @@
 ## Overview
 A C++ console-based application for managing student records with attendance, marks, promotion, and file persistence.
 
-## ✨ Features
+## Features
 
 ### Student Management
 - Add, delete, search, and display student records
@@ -77,7 +77,7 @@ g++ -std=c++11 -o student_system Student_Record_Management_System.cpp
 ./student_system
 ```
 
-## 📋 Usage
+## Usage
 
 ### Main Menu Options
 1. **Add New Student** - Enter all student details with validation
