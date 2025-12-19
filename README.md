@@ -1,45 +1,45 @@
 # Student Record Management System
 
-## 📌 Overview
+## Overview
 A C++ console-based application for managing student records with attendance, marks, promotion, and file persistence.
 
 ## ✨ Features
 
-### 📊 Student Management
+### Student Management
 - Add, delete, search, and display student records
 - Store student details: roll number, name, class, CNIC/B-Form, address
 - Track admission year and current academic year
 
-### 📝 Academic Tracking
+### Academic Tracking
 - Subject management with custom lists per class/category
 - Marks entry with validation (0-100 or A/L/- for absent/leave/not entered)
 - Automatic grade calculation (A-F based on percentage)
 - Term completion tracking (0-3 terms)
 - Board marks flag for classes 8-12
 
-### 📅 Attendance System
+### Attendance System
 - Calendar-based attendance for 2024-2034
 - Mark present/absent for specific dates
 - View attendance summary (total/present/absent days)
 
-### 🎓 Promotion System
+### Promotion System
 - Automatic promotion to next class (1-11)
 - Requires 3 completed terms and board marks (classes 8-12)
 - Validates promotion timing based on academic calendar
 - Clears old marks after promotion
 
-### 💾 Data Persistence
+### Data Persistence
 - Save/load records to "students.txt"
 - File format supports subjects and attendance
 - Backward compatibility with old file formats
 
-### 🧠 Data Structures
+### Data Structures
 - Linked list for main student records
 - Hash table for O(1) student lookup by roll number
 - Linked list for subject lists per student
 - Map for calendar attendance tracking
 
-## 🏗️ Class Structure
+## Class Structure
 
 ### `Calendar`
 - Manages date-based attendance
@@ -61,7 +61,7 @@ A C++ console-based application for managing student records with attendance, ma
 - Implements all operations (add, delete, search, etc.)
 - Manages file I/O and hash table
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - C++ compiler (GCC, Clang, or MSVC)
@@ -105,14 +105,14 @@ g++ -std=c++11 -o student_system Student_Record_Management_System.cpp
   - `-` for Not Entered
 - Classes 8-12 have 75 max marks for science subjects
 
-## 📁 File Format
+## File Format
 ```
 roll|name|father|class|category|admissionYear|currentYear|dob|cnic|address|totalSubjects|terms|boardMarks|subjects|attendance
 ```
 - Subjects: `subject1:marks1,subject2:marks2`
 - Attendance: `YYYY-MM-DD:P/A,YYYY-MM-DD:P/A`
 
-## ⚠️ Validation Rules
+## Validation Rules
 - Roll numbers must be unique
 - CNIC/B-Form must be 13 digits
 - Date of birth: DDMMYYYY format
@@ -120,20 +120,17 @@ roll|name|father|class|category|admissionYear|currentYear|dob|cnic|address|total
 - Marks: 0-maxMarks or A/L/-
 - Terms: 0-3 only
 
-## 🔧 Technical Details
+## Technical Details
 - **Language**: C++ (C++11 standard)
 - **Memory**: Manual memory management with proper cleanup
 - **Search**: O(1) average via hash table
 - **Storage**: Linked lists for dynamic data
 - **Persistence**: Text-based file storage
 
-## 📈 Future Enhancements
+## Future Enhancements
 Potential improvements:
 - GUI interface
 - Database integration
 - Report generation
 - User authentication
 - Network functionality
-
-## 📄 License
-Open-source educational project. Modify and distribute freely.
